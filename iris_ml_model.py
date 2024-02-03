@@ -68,7 +68,7 @@ st.header('Heatmap')
 iris1=iris[['sepal_length','sepal_width','petal_length','petal_width']]
 iris1=pd.DataFrame(iris1)
 # Calculate  correlation matrix
-correlation_matrix = iris.corr()
+correlation_matrix = iris1.corr()
 st.plotly_chart(px.imshow(correlation_matrix))
 
 st.header('Pie chart')
